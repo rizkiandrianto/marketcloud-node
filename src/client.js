@@ -5,7 +5,7 @@ module.exports = (function () {
   var crypto = require('crypto')
   var request = require('superagent')
   var path = require('path')
-  var endpoints = require(path.join(__dirname, 'endpoints.js'))
+  var endpoints = require('./endpoints.js')
 
   var VERSION = require('../package.json').version
 

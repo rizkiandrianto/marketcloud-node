@@ -6,14 +6,14 @@ var fs = require('fs')
 var endpoints = {}
 
 fs
-  .readdirSync(path.join(__dirname, 'endpoints'))
+  .readdirSync('./endpoints')
   .filter(function (file) {
     return (file.indexOf('.') !== 0) && (file !== 'resource.js')
   })
   .forEach(function (file) {
     var name = file.replace('.js', '')
 
-    endpoints[name] = require(path.join(__dirname, 'endpoints', file))
+    endpoints[name] = require(`./endpoints/${file}`)
   })
 
 module.exports = endpoints

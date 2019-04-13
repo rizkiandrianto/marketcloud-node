@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Marketcloud/marketcloud-node#readme",
   "dependencies": {
     "bluebird": "^3.4.1",
+    "fs": "0.0.1-security",
     "superagent": "^3.5.2"
   },
   "devDependencies": {
